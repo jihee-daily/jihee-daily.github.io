@@ -482,7 +482,7 @@ body.light-mode .video-bg:before {
   font-size: 30px;
   display: flex;
   align-items: center;
-  margin: 0;
+  margin-bottom: 25px;
 }
 .img-content svg {
   width: 28px;
@@ -490,9 +490,9 @@ body.light-mode .video-bg:before {
 }
 
 .content-text {
+  width: 1000px;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 10px;
   line-height: 1.7em;
   color: #ebecec;
   display: -webkit-box;
@@ -504,7 +504,7 @@ body.light-mode .video-bg:before {
 
 .content-wrapper-context {
   margin-left: 100px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 50px;
   max-width: 350px;
 }
