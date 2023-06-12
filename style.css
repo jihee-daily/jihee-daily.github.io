@@ -503,10 +503,10 @@ body.light-mode .video-bg:before {
 }
 
 .content-wrapper-context {
-  margin-left: 60px;
+  margin-left: 0px;
   margin-top: 28px;
   margin-bottom: 50px;
-  max-width: 350px;
+  max-width: 890px;
 }
 
 .content-button {
@@ -522,7 +522,7 @@ body.light-mode .video-bg:before {
 }
 
 .content-wrapper-img {
-  width: 320px;
+  width: fit-content;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -610,10 +610,10 @@ body.light-mode .video-bg:before {
 .products-introduce {
   display: flex;
   align-items: center;
-  width: 150px;
+  width: fit-content;
   margin: 30px;
-  /* font-weight: 400; */
   line-height: 1.6em;
+  max-width: fit-content;
 }
 
 .status {
@@ -836,6 +836,38 @@ body.light-mode .video-bg:before {
   width: calc(100% + 20px);
 }
 
+.content-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* font-size: 16px; */
+  background-color: var(--content-bg);
+  border-radius: 14px;
+  border: 1px solid var(--theme-bg-color);
+  padding: 20px; 
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.content-card:hover {
+  /* transform: scale(.5); */
+  background-color: var(--theme-bg-color);
+}
+.app-card span {
+  display: flex;
+  align-items: center;
+}
+.content-card__subtext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6em;
+  /* border-bottom: 1px solid var(--border-color); */
+  /* padding-bottom: 20px; */
+  align-items: center;
+  text-align: justify;
+  max-width: fit-content;
+  margin: 20px;
+}
+
 .app-card {
   display: flex;
   flex-direction: column;
@@ -844,7 +876,7 @@ body.light-mode .video-bg:before {
   background-color: var(--content-bg);
   border-radius: 14px;
   border: 1px solid var(--theme-bg-color);
-  padding: 20px;
+  padding: 30px;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -869,6 +901,7 @@ body.light-mode .video-bg:before {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6em;
+  text-align: justify;
   margin-top: 20px;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 20px;
@@ -972,6 +1005,8 @@ body.light-mode .video-bg:before {
   font-size: 14px;
   color: #88836c;
 }
+
+
 
 @-webkit-keyframes fly {
   40% {
